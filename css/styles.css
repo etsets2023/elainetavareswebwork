@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background:rgba(109,35,0,255);
+    --color-white:rgb(255, 255, 255);
+}
+
+body{  
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #ffa8f5;
+    background-color: black;
+}
+
+
+h1{
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 140px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.header{
+    background: #6e2165;
+    /*padding-inline: 16px;*/
+}
+
+.nav{
+    /*max-width: 1280px;*/
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgb(110, 33, 101, 0.6);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding-inline: 200px; 
+    z-index:3;
+}
+
+.logo img{
+    width: 45px;
+}
+
+h5{
+    font-size: 28px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 65px;
+    list-style: none;
+    padding-bottom: 20px;  
+} 
+
+.nav-list li{
+    border: none;
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid white;  
+}
+
+.nav-list a{
+    font-size: 18px;
+    color: white;
+    padding-block: 16px;
+    text-decoration: none; 
+}
+
+
+
+.hamburger{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+#apresentacao{
+    /* border: 1px solid red; */
+    width: 100%;     
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: center;
+    border-bottom: 1px dotted white;  
+    padding-top: 100px;   
+    padding-bottom: 50px;   
+}
+
+  #text{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .digitacao1{
+    letter-spacing: 5px;
+  }
+
+.digitacao1{
+    font-size: 30px;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: blinkCursor .9s steps(40) 6 normal forwards, 
+    typing1 4s steps(40) 1s normal forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;  
+}
+
+.typing-animation{
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: blinkCursor .9s steps(40) 5s infinite normal , 
+    typing 4s steps(40) 5s normal forwards;    
+}
+
+
+@keyframes blinkCursor {
+    25% {
+        border-right-color: transparent;
+    }
+
+    50% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    100% {
+        border-right-color: transparent;
+    }
+  
+}
+
+@keyframes typing1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 310px;
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 320px;
+    }
+}
+
+.apresentacao-paragrafo p {
+    text-align: justify;
+}
+
+.apresentacao-img{
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.apresentacao-img img{
+    width: 100%;
+    z-index: 1;
+}
+
+.apresentacao-img-2{
+    /* border: 1px solid orange; */
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.apresentacao-btn {
+    padding: 20px;
+    background-color: #6e2165;
+    border-radius: 8px;
+    border: none;
+    width: 40%;
+    margin: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    /* border: 1px solid blue; */
+}
+
+.apresentacao-btn:hover {
+    box-shadow: 0px 0px 10px white;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 26px;
+ }
+ 
+/*.apresentacao-paragrafo{
+    border: 1px solid white;
+    text-align: justify;
+    line-height: 50px;
+    text-indent: 2em;
+}*/
+
+
+
+
+#tecnologias{
+    /* border: 1px solid rgb(68, 0, 255);  */
+    width: 100%;     
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: center;
+    border-bottom: 1px dotted white;          
+}
+
+#tecnologias h2{
+    width: 100%;
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#tecnologias h3{
+    font-size: 50px;
+}
+
+ /*.tecnologias-seta{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .setas{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+ }
+
+ .seta{
+    width: 80px;
+   
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes setaBaixo{
+    0%{
+        transform: translateY(0%)
+    }
+
+    100%{
+        transform: translateY(30%)
+    }
+ }*/
+
+
+#tecnologias img{
+    width: 60px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 16px 0 16px 0; 
+}
+
+#tecnologias li:hover{
+    background-color:white;
+    color: #6e2165;
+    transition: all 1s ease;
+}
+
+#tecnologias-html, #tecnologias-css, #tecnologias-js, #tecnologias-react{
+    display: none;
+}
+
+.tecnologias-coluna{
+    width: 40%;
+    background-color: #6e2165;
+    padding: 30px;
+    color: white;
+    border: 20px solid #090e17;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#js img{
+    width: 105px;
+    margin-right: -25px;
+}
+
+.coluna-um-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    border: 1px solid white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.coluna-um-icone:hover{
+    transform: translate(0, -10px);
+    transition: all 0.3s;  
+    box-shadow: 0px 0px 10px white;
+}
+
+#projetos{
+    /* border: 1px solid orange; */
+    width: 100%;     
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dotted white;          
+    }
+
+    #projetos h2{
+        width: 100%;
+        font-family: "Ephesis", cursive;
+        font-weight: 400;
+        font-size: 150px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+
+.projeto-card{
+    box-shadow: 5px 5px 5px #6e2165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    width: 25%;
+    /*height: 350px;*/
+    gap: 30px;
+    background-image: linear-gradient(0deg, #6e2165, #ffa8f5); 
+    border: none;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.projeto-card:hover{
+    box-shadow: 5px 5px 5px white;
+    transition: all 1s;
+}
+
+#projetos img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.projeto-card h3{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.projeto-card button {
+    padding: 20px;
+    background-color: #6e2165;
+    border-radius: 8px;
+    border: none;
+}
+
+.projeto-card button:hover {
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.projeto-card button a{
+    text-decoration: none;
+    color: white;;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.projeto-card button a:hover{
+    text-decoration: none;
+    color: #6e2165;
+}
+
+#contatos{
+    /* border: 1px solid blue; */
+    width: 100%;     
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dotted white; 
+    padding-bottom: 50px;  
+}
+
+
+#contatos h2{
+    width: 100%;
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contatos-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%; 
+    gap: 30px;
+    margin-top: -118px;  
+}
+
+.formulario{
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+
+.redes2{
+    /* border: 1px solid red; */
+    margin-left: 60px;
+}
+
+.redes2 a{
+    text-decoration: none;
+}
+
+.redes img{
+    width: 65px;
+    border-radius: 14px;
+}
+
+
+
+.redes img:hover{
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
+
+
+.label-float input{ /*vai estilizar apenas os inputs filhos da div classe label-float*/
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;/*comportamento de bloco*/
+    border: none;
+    border-bottom: 2px solid #6e2165;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 1s ease-out;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.label-float{
+    /*border: 2px solid black;*/
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease-out;
+}
+    
+.label-float label{
+    color: #6e2165;
+    pointer-events: none;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label, /* O que acontece com a label quando estou focada no input*/
+.label-float input:valid + label{ /* O que acontece com a label quando estou tem um conteúdo válido no input*/
+    font-size: 13px;
+    margin-top: 0;
+    color: white;
+}
+
+.formulario-botao{
+    background-color: #6e2165;
+    border-color: rgba(55,26,16,255); 
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition:all 1s ease-out;
+}
+
+.formulario-botao:hover{
+    background-color:white;
+    border-color: white;;
+    color: #6e2165; 
+}
+
+textarea{    
+    outline: none;
+    padding: 20px;
+    border: 1px solid #6e2165;
+    background-color: white;
+    border-radius: 8px;
+}
+
+textarea:focus{
+    border: 1px solid white;
+   
+}
+
+.container-formulario-botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    border: 4px solid #6e2165;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #6e2165;
+}
+
+h4{
+    font-family: "Ephesis", cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.email:hover{
+    color: white
+}
+
+.meu-contato{
+    width: 300px;
+}
+
+footer{
+    width: 100%;
+    display: flex;   
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    background: rgb(110, 33, 101, 0.6);
+    padding: 50px;
+    color: black;
+}
+
+footer h6{
+    font-size: 24px;
+    color: white;
+   
+}
+
+
+
+/****************Media Queries*******************/
+
+/*Para Tablets*/
+@media (max-width: 1024px){
+
+    /*body{
+         background-color: red; 
+    }*/
+
+    .nav{
+        padding-inline: 40px; 
+    }
+
+    .hamburger{
+        display: block;
+    }
+  
+.nav-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6e2165;
+    clip-path: circle(100px at 90% -30%);/* PORCENTAGEM EIXO X E EIXO Y*/
+    transition: 0.3s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    pointer-events: none;
+ }
+
+ .nav-list a{
+    font-size: 24px;
+    opacity: 0;
+ }
+
+ .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+ }
+
+ .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+    
+ }
+
+ .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+    
+ }
+
+ .nav-list li:nth-child(4) a {
+    transition: 0.5s 0.8s;
+    
+ }
+
+ /***********ESTILOS ATIVOS**********/
+.nav.active .nav-list{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+    }
+
+.nav.active .nav-list a {
+    opacity: 1;
+    }
+
+
+.nav-active .hamburger{
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+.nav-active .hamburger::before{
+    transform: rotate(135deg);
+}
+
+.nav-active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+h1{
+    font-size: 120px;
+   
+}
+
+
+.apresentacao-img-2{
+    /* border: 1px solid blue; */
+    width: 80%;
+}
+
+.apresentacao-img{
+    width: 80%;
+    padding-bottom: 100px;
+}
+
+.apresentacao-img img{
+    width: 60%;
+}
+
+.tecnologias-coluna{
+    width: 90%;
+}
+
+/*#js img{
+    display: none;
+}*/
+
+.projeto-card{
+    width: 80%;
+}
+
+form{
+    width: 100%;
+}
+
+.contatos-container{
+    width: 100%;  
+}
+
+#contatos h2{
+    margin-bottom: 150px;
+}
+
+.formulario{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formulario h4{
+    margin-top: 50px;
+}
+
+textarea{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    /*body{
+         background-color: blue; 
+    }*/
+
+    h1{
+        font-size: 80px;
+    }
+
+    .apresentacao-img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .apresentacao-img-2{
+       width: 90%;
+        margin: auto;
+    }
+
+    .apresentacao-btn {
+        width: 60%;
+}
+
+    #tecnologias h2, #projetos h2, #contatos h2{
+        font-size: 80px;
+    }
+
+    .tecnologias-coluna{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .projeto-card{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .contatos-container{
+        width: 90%; 
+        margin: auto;
+      
+    }
+
+
+    footer h6{
+        font-size: 18px;
+       
+    }
+
+    
+    .apresentacao-paragrafo p{
+        font-size: 18px;
+        text-align: justify;
+        }
+
+        #tecnologias h3{
+            font-size: 30px;
+        }
+
+        .redes2 p{
+            font-size:18px;
+            text-align: center;
+            margin-right: 80px;
+            }
+    }
+
+
+
+
+
+
