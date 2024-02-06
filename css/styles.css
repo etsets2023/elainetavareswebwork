@@ -213,7 +213,7 @@ h5{
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid white; */
-    gap: 60px;
+    
     width: 100%;
 }
 
@@ -738,6 +738,14 @@ h1{
     width: 80%;
     padding-bottom: 100px;
 }
+
+.apresentacao-btn { 
+    font-size: 18px; 
+}
+
+.apresentacao-btn:hover {
+    font-size: 20px;
+ }
 
 .tecnologias-coluna{
     width: 90%;
