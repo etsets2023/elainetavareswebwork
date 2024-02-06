@@ -213,7 +213,7 @@ h5{
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid white; */
-    
+    gap: 0;
     width: 100%;
 }
 
