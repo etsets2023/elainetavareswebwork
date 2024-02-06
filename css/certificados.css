@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background:rgba(109,35,0,255);
+    --color-white:rgb(255, 255, 255);
+}
+
+body{  
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #ffa8f5;
+    background-color: black;
+}
+
+
+h1{
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 140px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.header{
+    background: #6e2165;
+    /*padding-inline: 16px;*/
+}
+
+.nav{
+    /*max-width: 1280px;*/
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgb(110, 33, 101, 0.6);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding-inline: 200px; 
+    z-index:3;
+}
+
+.logo img{
+    width: 45px;
+}
+
+h5{
+    font-size: 28px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 65px;
+    list-style: none;
+    padding-bottom: 20px;  
+} 
+
+.nav-list li{
+    border: none;
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid white;  
+}
+
+.nav-list a{
+    font-size: 18px;
+    color: white;
+    padding-block: 16px;
+    text-decoration: none; 
+}
+
+
+#projetos{
+    /* border: 1px solid orange; */
+    width: 100%;     
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dotted white;          
+    }
+
+    #projetos h2{
+        width: 100%;
+        font-family: "Ephesis", cursive;
+        font-weight: 400;
+        font-size: 150px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+
+.projeto-card{
+    box-shadow: 5px 5px 5px #6e2165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    width: 80%;
+    /*height: 350px;*/
+    gap: 30px;
+    background-image: linear-gradient(0deg, #6e2165, #ffa8f5); 
+    border: none;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.projeto-card:hover{
+    box-shadow: 5px 5px 5px white;
+    transition: all 1s;
+}
+
+#projetos img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.projeto-card h3{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.projeto-card button {
+    padding: 20px;
+    background-color: #6e2165;
+    border-radius: 8px;
+    border: none;
+}
+
+.projeto-card button:hover {
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.projeto-card button a{
+    text-decoration: none;
+    color: white;;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.projeto-card button a:hover{
+    text-decoration: none;
+    color: #6e2165;
+}
+
+#contatos{
+    /* border: 1px solid blue; */
+    width: 100%;     
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dotted white; 
+    padding-bottom: 50px;  
+}
+
+
+#contatos h2{
+    width: 100%;
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contatos-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%; 
+    gap: 30px;
+    margin-top: -118px;  
+}
+
+.formulario{
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+
+.redes2{
+    /* border: 1px solid red; */
+    margin-left: 60px;
+}
+
+.redes2 a{
+    text-decoration: none;
+}
+
+.redes img{
+    width: 65px;
+    border-radius: 14px;
+}
+
+
+
+.redes img:hover{
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
+
+
+.label-float input{ /*vai estilizar apenas os inputs filhos da div classe label-float*/
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;/*comportamento de bloco*/
+    border: none;
+    border-bottom: 2px solid #6e2165;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 1s ease-out;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.label-float{
+    /*border: 2px solid black;*/
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease-out;
+}
+    
+.label-float label{
+    color: #6e2165;
+    pointer-events: none;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label, /* O que acontece com a label quando estou focada no input*/
+.label-float input:valid + label{ /* O que acontece com a label quando estou tem um conteúdo válido no input*/
+    font-size: 13px;
+    margin-top: 0;
+    color: white;
+}
+
+.formulario-botao{
+    background-color: #6e2165;
+    border-color: rgba(55,26,16,255); 
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition:all 1s ease-out;
+}
+
+.formulario-botao:hover{
+    background-color:white;
+    border-color: white;;
+    color: #6e2165; 
+}
+
+textarea{    
+    outline: none;
+    padding: 20px;
+    border: 1px solid #6e2165;
+    background-color: white;
+    border-radius: 8px;
+}
+
+textarea:focus{
+    border: 1px solid white;
+   
+}
+
+.container-formulario-botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    border: 4px solid #6e2165;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #6e2165;
+}
+
+h4{
+    font-family: "Ephesis", cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.email:hover{
+    color: white
+}
+
+.meu-contato{
+    width: 300px;
+}
+
+footer{
+    width: 100%;
+    display: flex;   
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    background: rgb(110, 33, 101, 0.6);
+    padding: 50px;
+    color: black;
+}
+
+footer h6{
+    font-size: 24px;
+    color: white;
+   
+}
+
+
+
+/****************Media Queries*******************/
+
+/*Para Tablets*/
+@media (max-width: 1024px){
+
+    /*body{
+         background-color: red; 
+    }*/
+
+    .nav{
+        padding-inline: 40px; 
+    }
+
+    .hamburger{
+        display: block;
+    }
+  
+.nav-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6e2165;
+    clip-path: circle(100px at 90% -30%);/* PORCENTAGEM EIXO X E EIXO Y*/
+    transition: 0.3s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    pointer-events: none;
+ }
+
+ .nav-list a{
+    font-size: 24px;
+    opacity: 0;
+ }
+
+ .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+ }
+
+ .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+    
+ }
+
+ .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+    
+ }
+
+ .nav-list li:nth-child(4) a {
+    transition: 0.5s 0.8s;
+    
+ }
+
+ /***********ESTILOS ATIVOS**********/
+.nav.active .nav-list{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+    }
+
+.nav.active .nav-list a {
+    opacity: 1;
+    }
+
+
+.nav-active .hamburger{
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+.nav-active .hamburger::before{
+    transform: rotate(135deg);
+}
+
+.nav-active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+
+.apresentacao-img-2{
+    /* border: 1px s blue; */
+    width: 90%;
+    margin: auto;
+}
+
+.apresentacao-img{
+    width: 90%;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.apresentacao-img img{
+    width: 90%;
+    z-index: 1;
+}
+
+
+.apresentacao-btn { 
+    font-size: 18px; 
+    width: 60%;
+}
+
+.tecnologias-coluna{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+#tecnologias h2, #projetos h2, #contatos h2{
+    font-size: 80px;
+}
+
+
+
+/*#js img{
+    display: none;
+}*/
+
+.projeto-card{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+form{
+    width: 100%;
+}
+
+.contatos-container{
+    width: 90%; 
+    margin: auto; 
+}
+
+
+
+#contatos h2{
+    margin-bottom: 150px;
+}
+
+.formulario{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formulario h4{
+    margin-top: 50px;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+footer h6{
+    font-size: 18px;
+   
+}
+
+
+.apresentacao-paragrafo p{
+    font-size: 18px;
+    text-align: justify;
+    }
+
+    #tecnologias h3{
+        font-size: 30px;
+    }
+
+    .redes2 p{
+        font-size:18px;
+        text-align: center;
+        margin-right: 80px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    /*body{
+         background-color: blue; 
+    }*/
+
+}
+
+
+
+
+    
+
+
+   
+
+
+
+
+
+
