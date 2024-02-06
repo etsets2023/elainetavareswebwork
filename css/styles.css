@@ -725,28 +725,45 @@ footer h6{
 }
 
 h1{
-    font-size: 120px;
-   
+    font-size: 80px;
 }
 
 
 .apresentacao-img-2{
     /* border: 1px s blue; */
-    width: 80%;
+    width: 90%;
+    margin: auto;
 }
 
 .apresentacao-img{
-    width: 80%;
+    width: 90%;
     padding-bottom: 50px;
+    margin: auto;
 }
+
+.apresentacao-img img{
+    width: 90%;
+    z-index: 1;
+}
+
 
 .apresentacao-btn { 
     font-size: 18px; 
+    width: 60%;
 }
 
 .tecnologias-coluna{
     width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
+
+#tecnologias h2, #projetos h2, #contatos h2{
+    font-size: 80px;
+}
+
+
 
 /*#js img{
     display: none;
@@ -754,15 +771,22 @@ h1{
 
 .projeto-card{
     width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
+
 
 form{
     width: 100%;
 }
 
 .contatos-container{
-    width: 100%;  
+    width: 90%; 
+    margin: auto; 
 }
+
+
 
 #contatos h2{
     margin-bottom: 150px;
@@ -781,7 +805,34 @@ form{
 textarea{
     width: 100%;
 }
+
+
+footer h6{
+    font-size: 18px;
+   
 }
+
+
+.apresentacao-paragrafo p{
+    font-size: 18px;
+    text-align: justify;
+    }
+
+    #tecnologias h3{
+        font-size: 30px;
+    }
+
+    .redes2 p{
+        font-size:18px;
+        text-align: center;
+        margin-right: 80px;
+        }
+}
+
+
+
+
+
 
 
 
@@ -795,67 +846,16 @@ textarea{
          background-color: blue; 
     }*/
 
-    h1{
-        font-size: 80px;
-    }
-
-    .apresentacao-img{
-        width: 90%;
-        margin: auto;
-    }
-
-    .apresentacao-img-2{
-       width: 90%;
-        margin: auto;
-        
-    }
-
-    .apresentacao-btn {
-        width: 60%;
 }
 
-    #tecnologias h2, #projetos h2, #contatos h2{
-        font-size: 80px;
-    }
-
-    .tecnologias-coluna{
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .projeto-card{
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .contatos-container{
-        width: 90%; 
-        margin: auto;
-      
-    }
+  
 
 
-    footer h6{
-        font-size: 18px;
-       
-    }
 
     
-    .apresentacao-paragrafo p{
-        font-size: 18px;
-        text-align: justify;
-        }
 
-        #tecnologias h3{
-            font-size: 30px;
-        }
 
-        .redes2 p{
-            font-size:18px;
-            text-align: center;
-            margin-right: 80px;
-            }
-    }
+   
 
 
 
