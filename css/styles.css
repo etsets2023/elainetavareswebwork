@@ -204,6 +204,7 @@ h5{
     flex-flow: row wrap;
     justify-content: center;
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 .apresentacao-img-2-container{
@@ -213,6 +214,7 @@ h5{
     /* border: 1px solid white; */
     gap: 0;
     width: 100%;
+
 }
 
 .apresentacao-btn {
