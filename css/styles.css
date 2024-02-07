@@ -181,9 +181,6 @@ h5{
     }
 }
 
-.apresentacao-paragrafo p {
-    text-align: justify;
-}
 
 .apresentacao-img{
     /* border: 1px solid red; */
@@ -191,6 +188,7 @@ h5{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
     
 }
 
@@ -231,6 +229,8 @@ h5{
     text-align: center;
     font-size: 22px;
     /* border: 1px solid blue; */
+    
+    
 }
 
 .apresentacao-btn:hover {
@@ -238,6 +238,11 @@ h5{
     transition: all 0.3s;
     cursor: pointer;
  }
+
+ .apresentacao-paragrafo p {
+    text-align: justify;
+    line-height: 37px;
+}
  
 /*.apresentacao-paragrafo{
     border: 1px solid white;
