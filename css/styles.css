@@ -106,7 +106,7 @@ h5{
     width: 100%;     
     display: flex;
     flex-flow: row wrap;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     border-bottom: 1px dotted white;  
     padding-top: 100px;   
@@ -244,7 +244,7 @@ h5{
 
  .apresentacao-paragrafo p {
     text-align: justify;
-   
+  
 }
  
 /*.apresentacao-paragrafo{
