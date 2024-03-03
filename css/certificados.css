@@ -105,24 +105,14 @@ h5{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 26px;
     width: 50%;
+    /*height: 350px;*/
     gap: 30px;
     background-image: linear-gradient(0deg, #6e2165, #ffa8f5); 
     border: none;
     margin-left: 50px;
     margin-bottom: 50px;
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 1s;
-    transform: translateX(-100%);
-}
-
-.show{
-    opacity:1;
-    filter: blur(0);
-    transition: all 2s;
-    transform: translateX(0%);
 }
 
 .projeto-card:hover{
@@ -137,9 +127,44 @@ h5{
 
 
 .projeto-card h3{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: black;
+}
+
+[data-anime ="down"]{
+    transform: translate3d(0, -100%, 0);
+}
+
+
+[data-anime ="up"]{
+    transform: translate3d(0, 100%, 0);
+}
+
+
+[data-anime ="left"]{
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    transition: all 3s;
+}
+
+
+[data-anime ="right"]{
+    transform: translate3d(100px, 0, 0);
+    opacity: 0;
+    transition: all 2s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.show{
+    opacity:1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0%);
 }
 
 button {
@@ -362,6 +387,7 @@ footer h6{
     color: white;
    
 }
+
 
 
 /****************Media Queries*******************/

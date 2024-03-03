@@ -106,19 +106,11 @@ h5{
     width: 100%;     
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     border-bottom: 1px dotted white;  
     padding-top: 100px;   
     padding-bottom: 50px;   
-}
-
-#apresenracao :nth-child(2){
-    transition-delay: 400ms;
-}
-
-#apresentacao :nth-child(3){
-    transition-delay: 700ms;
 }
 
   #text{
@@ -136,13 +128,13 @@ h5{
 
 .digitacao1{
     font-size: 30px;
-    border-right: 2px solid transparent;
+    /*border-right: 2px solid transparent;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
     animation: blinkCursor .9s steps(40) 6 normal forwards, 
     typing1 4s steps(40) 1s normal forwards;
-    animation: name duration timing-function delay iteration-count direction fill-mode;  
+    animation: name duration timing-function delay iteration-count direction fill-mode;  */
 }
 
 .typing-animation{
@@ -151,7 +143,8 @@ h5{
     overflow: hidden;
     width: 0;
     animation: blinkCursor .9s steps(40) 5s infinite normal , 
-    typing 4s steps(40) 5s normal forwards;    
+    typing 2s steps(40) 1s normal forwards;   
+    animation: name duration timing-function delay iteration-count direction fill-mode; 
 }
 
 
@@ -189,6 +182,9 @@ h5{
     }
 }
 
+.apresentacao-paragrafo p {
+    text-align: justify;
+}
 
 .apresentacao-img{
     /* border: 1px solid red; */
@@ -196,7 +192,7 @@ h5{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 50px; 
 }
 
 .apresentacao-img img{
@@ -212,7 +208,6 @@ h5{
     justify-content: center;
     margin-left: 50px;
     margin-top: 50px;
-      
 }
 
 .apresentacao-img-2-container{
@@ -221,7 +216,7 @@ h5{
     justify-content: space-evenly;
     /* border: 1px solid white; */
     gap: 0;
-    width: 100%;  
+    width: 100%;
 }
 
 .apresentacao-btn {
@@ -239,9 +234,6 @@ h5{
     font-size: 22px;
     /* border: 1px solid blue; */
     margin-bottom: 10px;
-
-    
-    
 }
 
 .apresentacao-btn:hover {
@@ -249,11 +241,6 @@ h5{
     transition: all 0.3s;
     cursor: pointer;
  }
-
- .apresentacao-paragrafo p {
-    text-align: justify;
-  
-}
  
 /*.apresentacao-paragrafo{
     border: 1px solid white;
@@ -262,7 +249,64 @@ h5{
     text-indent: 2em;
 }*/
 
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
 
+.show{
+    opacity:1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0%);
+}
+
+#apresentacao :nth-child(3){
+    transition-delay:700ms;
+}
+
+#apresentacao :nth-child(4){
+    transition-delay:400ms;
+}
+
+
+[data-anime]{
+    
+}
+
+[data-anime ="down"]{
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    transition: all 2s;
+}
+
+
+[data-anime ="up"]{
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    transition: all 2s;
+}
+
+
+[data-anime ="left"]{
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    transition: all 2s;
+}
+
+
+[data-anime ="right"]{
+    transform: translate3d(100px, 0, 0);
+    opacity: 0;
+    transition: all 2s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
 
 
 #tecnologias{
@@ -654,25 +698,13 @@ footer h6{
    
 }
 
-
-.hidden{
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 1s;
-    transform: translateX(-100%);
+.whats_fixo{
+    width: 120px;
+    position: fixed;
+    right: 0;
+    bottom: 75px;
+    z-index: 1;
 }
-
-.show{
-    opacity:1;
-    filter: blur(0);
-    transition: all 2s;
-    transform: translateX(0%);
-}
-
-
-
-
-
 
 
 /****************Media Queries*******************/

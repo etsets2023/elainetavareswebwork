@@ -37,9 +37,9 @@ link3.addEventListener("click", () =>{
     nav.classList.toggle("active");
 })
 
-//link4.addEventListener("click", () =>{
-//   nav.classList.toggle("active");
-//})
+link4.addEventListener("click", () =>{
+   nav.classList.toggle("active");
+})
 
 
 
@@ -78,18 +78,40 @@ btnReact.addEventListener('click', () =>{
 })
 
 
-const myObserver = new IntersectionObserver ((entries) =>{
-    entries.forEach((entry) =>{
-        if(entry.isIntersecting === true){
-            entry.target.classList.add('show')
+//MY OBSERVER
+//const myObserver = new IntersectionObserver ((entries) =>{
+//    entries.forEach((entry) =>{
+//        if(entry.isIntersecting === true){
+//            entry.target.classList.add('show')
+//        } else{
+//            entry.target.classList.remove('show')
+//        }
+//    })
+//});
+
+//const elements = document.querySelectorAll('.hidden')
+
+//elements.forEach((element) => myObserver.observe(element))
+//FIM MY OBSERVER
+
+//DATA ANIME PARA MAIS ELEMENTOS//
+const item = document.querySelectorAll('[data-anime');
+const animeScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85;
+    // console.log(windowTop)
+
+    item.forEach(element => {
+        if(windowTop > element.offsetTop) {
+            element.classList.add('animate')
         } else{
-            entry.target.classList.remove('show')
+            element.classList.remove('animate')
         }
     })
-});
+}
 
-const elements = document.querySelectorAll('.hidden')
+animeScroll()
 
-elements.forEach((element) => myObserver.observe(element))
-
-
+window.addEventListener('scroll', () =>{
+    animeScroll()
+})
+//FIM DATA ANIME PARA MAIS ELEMENTOS//

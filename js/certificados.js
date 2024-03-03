@@ -1,13 +1,21 @@
-const myObserver = new IntersectionObserver ((entries) =>{
-    entries.forEach((entry) =>{
-        if(entry.isIntersecting === true){
-            entry.target.classList.add('show')
+//DATA ANIME PARA MAIS ELEMENTOS//
+const item = document.querySelectorAll('[data-anime');
+const animeScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85;
+    // console.log(windowTop)
+
+    item.forEach(element => {
+        if(windowTop > element.offsetTop) {
+            element.classList.add('animate')
         } else{
-            entry.target.classList.remove('show')
+            element.classList.remove('animate')
         }
     })
-});
+}
 
-const elements = document.querySelectorAll('.projeto-card')
+animeScroll()
 
-elements.forEach((element) => myObserver.observe(element))
+window.addEventListener('scroll', () =>{
+    animeScroll()
+})
+//FIM DATA ANIME PARA MAIS ELEMENTOS//
